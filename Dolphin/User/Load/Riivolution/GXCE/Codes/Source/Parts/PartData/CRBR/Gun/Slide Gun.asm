@@ -2,7 +2,7 @@
 Slide Gun [Project Hive]
 ######################################
 .alias PartType = 0x01
-.alias PartBase = 0x10
+.alias PartBase = 0x2B
 .alias ModelID = 0x10
     .BA<-PartName
     .BA->$8023BCF0
@@ -28,13 +28,13 @@ Medium-Long"
 RoboBytes:
 byte[56] |
 1,| #Illegal Toggle
-20, | #Slideshot Duration
+18, | #Slideshot Duration
 0, | #Related to Homing when rounds aren't facing the opponent
 0, 0, 0, 0, | #Nothing?
 1, | #Trail (0 for Invisible, 1 for Trail VFX)
-220, 250, 0, 63, | #Left Portion RGBA
-255, 255, 125, 255, | #Middle Portion RGBA
-220, 250, 0, 63, | #Right Portion RGBA
+0, 175, 227, 255, | #Left Portion RGBA
+58, 21, 140, 255, | #Middle Portion RGBA
+0, 175, 227, 255, | #Right Portion RGBA
 255, 255, 255, 255, | #Unknown RGBA
 0, 0, 0, 60, | #Trail Duration
 0, 0, 0, 1, | #????
